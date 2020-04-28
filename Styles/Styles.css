@@ -1,0 +1,897 @@
+/* 
+Red: #C61224
+Blue: #0765c9
+purple: #7B14C4
+*/
+
+
+/* Main Properties */
+
+@font-face {
+    src: url("../Fonts/Shabnam.ttf");
+    font-family: "Shabnam";
+}
+
+@font-face {
+    src: url("../Fonts/Ubuntu-Medium.ttf");
+    font-family: "Ubuntu-Medium";
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    direction: rtl;
+    font-family: "Shabnam", "Ubuntu-Medium";
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* Section Titles */
+
+.SectionTitleSec {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding-right: 3%;
+    padding-bottom: 8px;
+    align-items: center;
+}
+
+.SectionTitleSec span {
+    color: #C61224;
+    font-size: 20px;
+}
+
+.SectionTitleSec::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 98%;
+    width: 5px;
+    height: 100%;
+    background-color: #C61224;
+}
+
+
+/* Header */
+
+.Header {
+    background-color: #0765c9;
+    width: 100%;
+}
+
+
+/* Website logo holder and sign in buuton */
+
+.UserLogin {
+    display: inline-flex;
+    height: 100%;
+    justify-content: flex-end;
+    padding-left: 50px;
+    width: calc(50% - 50px);
+}
+
+.LogoUserSec {
+    padding: 20px 10px 20px 0;
+}
+
+.WebsiteLogoSec {
+    width: 49%;
+    display: inline-flex;
+    justify-content: flex-start;
+}
+
+.SignInButton {
+    display: inline-flex;
+    align-items: center;
+    background-color: #C61224;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.SignInButton span {
+    padding-left: 6px;
+}
+
+.WebsiteLogo {
+    display: inline-flex;
+    align-items: center;
+}
+
+.WebsiteLogo h2 {
+    font-weight: bold;
+    display: inline-block;
+    color: #fdf90e;
+}
+
+
+/* End Of  Website logo holder and sign in buuton */
+
+
+/* Navigation Bar */
+
+.NavBar {
+    margin-top: 10px;
+    /* background-color: rgb(62, 26, 146); */
+    border-top: 1px solid #1a1a1a86;
+    border-bottom: 3px solid;
+    background-color: #136ac7;
+}
+
+.NavLi {
+    padding-left: 10px;
+    display: inline-flex;
+    align-items: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-left: -4px;
+    width: 15%;
+    justify-content: center;
+    position: relative;
+}
+
+.NavLi:hover {
+    transition: all .3s;
+    background: rgb(198, 18, 36);
+}
+
+.NavItem {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.NavItem span {
+    color: #fdf90e;
+}
+
+.NavLi:nth-child(1) {
+    padding-right: 10px;
+}
+
+
+/* SubMenu */
+
+.NavSubMenuUl {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 100%;
+    right: 1%;
+    border-top: 3px solid;
+    visibility: hidden;
+    z-index: 3;
+}
+
+.NavSubMenuLi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 15px;
+    background-color: #136ac7;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.363);
+}
+
+.NavSubMenuLi:hover {
+    transition: all .3s;
+    background: rgb(198, 18, 36);
+}
+
+.NavSubMenuLi a {
+    color: rgb(255, 255, 255);
+}
+
+.NavSubMenuLi span {
+    color: rgb(255, 252, 55);
+}
+
+.NewsLi:hover .NavSubMenuUl {
+    visibility: visible;
+}
+
+.PlayersLi:hover .NavSubMenuUl {
+    visibility: visible;
+}
+
+
+/* End Of Sub Menu */
+
+
+/* Search Box */
+
+#SearchSection {
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.842);
+    z-index: 1000;
+}
+
+.CloseBtn {
+    font-size: 40px;
+    background-color: rgb(128, 8, 8);
+    display: flex;
+    align-items: center;
+    padding: 7px 10px;
+    align-self: flex-start;
+    margin-right: 15px;
+    position: relative;
+    top: -30%;
+}
+
+.SearchBox {
+    padding: 20px 15px;
+    width: 50%;
+    outline: none;
+    border-radius: 35px;
+    border: 2px solid;
+    font-size: 25px;
+}
+
+.SearchBtn {
+    margin-top: 35px;
+    width: 25%;
+    font-size: 30px;
+    padding: 15px 10px;
+    text-align: center;
+    background-color: rgb(21, 37, 179);
+    border: 2px solid;
+    border-radius: 25px;
+}
+
+.SearchBtn:hover {
+    background: linear-gradient(90deg, rgb(145, 10, 10), rgb(9, 80, 138));
+    transition: all .4s;
+    border-color: yellow;
+}
+
+.ShowSearch {
+    visibility: visible !important;
+}
+
+.FixPos {
+    position: fixed;
+    top: 0;
+}
+
+
+/*  Header Ends  */
+
+
+/* NextMatchSection */
+
+
+/* Next Match Info */
+
+.NextMatchSec {
+    padding-top: 15px;
+    padding-bottom: 30px;
+    background-color: #f0f8ff;
+    margin-bottom: 20px;
+}
+
+.NMInfo {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+
+/* next match teams section */
+
+.NMTeamsSec {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.NMTeamsLogoAndName {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+/* End Of next match teams section */
+
+
+/* Next match  details  Section*/
+
+.NMDetails {
+    padding-top: 15px;
+    width: 20%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border-left: 2px solid;
+    border-right: 2px solid; */
+    position: relative;
+}
+
+.NMDetails::after {
+    position: absolute;
+    content: '';
+    top: 25%;
+    left: 100%;
+    width: 3px;
+    height: 50%;
+    background-color: #7B14C4;
+}
+
+.NMDetails::before {
+    position: absolute;
+    content: '';
+    top: 25%;
+    left: 0%;
+    width: 3px;
+    height: 50%;
+    background-color: #7B14C4;
+}
+
+.NMDetails section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 7px;
+}
+
+.NMTime {
+    font-size: 25px;
+}
+
+
+/* End of Next match  details  Section*/
+
+
+/* Team Status Section */
+
+.NMTeamStatus {
+    display: flex;
+    flex-direction: column;
+}
+
+.NMTeamStatus h4 {
+    position: relative;
+    left: 50px;
+}
+
+.NMTeamStatus section {
+    display: flex;
+    flex-direction: row;
+}
+
+.MatchWin {
+    margin-right: 10px;
+    padding: 0px 7px;
+    background-color: green;
+    color: white;
+}
+
+.MatchLoss {
+    margin-right: 10px;
+    padding: 0px 11px;
+    background-color: rgb(131, 7, 7);
+    color: white;
+}
+
+.MatchDraw {
+    margin-right: 10px;
+    padding: 0px 10px;
+    background-color: rgb(56, 55, 55);
+    color: white;
+}
+
+
+/* End of Team Status Section */
+
+
+/* LatestNews */
+
+
+/* Latest News Title Box */
+
+.LatestNewsTitle {
+    padding: 10px 5px;
+    border-bottom: 2px solid;
+    background-color: rgb(5, 27, 68);
+}
+
+.LatestNewsTitle h3 {
+    color: white;
+}
+
+
+/* End Latest News Title Box */
+
+.LatestNewsSec {
+    padding: 15px 10px;
+}
+
+.LNDateTime {
+    color: rgb(165, 159, 159);
+}
+
+
+/* Formatting News Box */
+
+.LNImg {
+    display: flex;
+}
+
+.LNBox {
+    position: relative;
+    display: flex;
+    /* border-bottom: 2px solid rgba(131, 127, 127, 0.705); */
+    padding-bottom: 9PX;
+    margin-bottom: 15px;
+    padding-top: 15px;
+}
+
+.LNBox::after {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 25%;
+    width: 50%;
+    height: 2px;
+    background-color: #0765c9
+}
+
+.LNDetails {
+    justify-content: space-evenly;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.LNDateTimeSec {
+    padding-bottom: 10px;
+}
+
+.LNTitle {
+    padding-bottom: 10px;
+    width: fit-content;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.LNTextSec {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+}
+
+.LNText {
+    color: black;
+    font-size: 14px;
+    padding-left: 15px;
+}
+
+.LNActions {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+}
+
+.LNBtnSec {
+    width: 24%;
+}
+
+.LNBtn {
+    font-size: 17px;
+    font-weight: bold;
+    padding: 7px 15px;
+    background-color: #C61224;
+    display: inline-block;
+    border-radius: 11px;
+    color: white;
+}
+
+.LNBtn:hover {
+    transition: all .5s;
+    background: linear-gradient(to right, #C61224, #0765c9);
+}
+
+.LNFeedback {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 75%;
+    font-size: 14px;
+}
+
+.LNFeedback h3 {
+    font-weight: normal;
+    padding-right: 4px;
+    position: relative;
+    padding-top: 5px;
+}
+
+.HeartIcon {
+    color: #C61224;
+}
+
+.CommentIcon {
+    color: #7B14C4;
+}
+
+
+/* This season stats */
+
+.LatestNewsTitle h2 {
+    color: rgb(255, 255, 255);
+}
+
+.SeasonStatsSec {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    padding: 25px 0;
+    padding-top: 25px;
+}
+
+.SSMatches {
+    display: inline-block;
+    width: 45%;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.SSMatches img {
+    width: 100%;
+    display: block;
+    border-radius: 15px;
+}
+
+.SSMatchesMR {
+    margin-right: 2%;
+}
+
+.SSText {
+    border-radius: 15px;
+    box-shadow: 0px 1px 6px -1px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top, rgba(198, 18, 36, 0.6), rgba(7, 86, 170, 0.6));
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.SSText h1 {
+    font-size: 55px;
+    color: white;
+    text-shadow: -2px 7px 3px #1a1a1a;
+}
+
+.SSText h3 {
+    color: white;
+    font-size: 60px;
+    text-shadow: -2px 7px 3px #1a1a1a;
+}
+
+
+/*End of This season stats */
+
+
+/* Get News */
+
+.GetNewsSec {
+    background-color: #0765c9;
+    padding: 40px 5px 40px 0px;
+}
+
+.GetNewsActionsSec {
+    text-align: center;
+}
+
+.GNBtn {
+    padding: 10px 25px;
+    background-color: #C61224;
+    color: white;
+    width: 7%;
+    display: inline-block;
+    border: 2px solid transparent;
+    border-radius: 13px;
+    outline: none;
+    margin-top: 10px;
+}
+
+.GNBtn:hover {
+    transition: all .3s;
+    background-color: transparent;
+    border: 2px solid #fdf90e;
+}
+
+.GetNews span {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.GetNews {
+    display: block;
+    padding-bottom: 7px;
+    font-size: 18px;
+    color: #fdf90e;
+    padding-right: 2%;
+    padding-top: 15px;
+    width: fit-content;
+}
+
+.GNTxtBox {
+    border: 0px;
+    text-align: left;
+    padding: 10px 15px;
+    width: 30%;
+    outline: none;
+    border-bottom: 2px solid #fdf90e;
+    background-color: transparent;
+    margin-top: 15px;
+    color: #fdf90e;
+}
+
+.GNTxtBox::placeholder {
+    text-align: center;
+    color: #fdf90e;
+    font-weight: bold;
+}
+
+
+/* End of Get News Section */
+
+
+/* Footer */
+
+
+/* Footer Content */
+
+footer {
+    background-color: #1a1a1a;
+}
+
+.FooterContent {
+    padding-top: 30px;
+    padding-right: 10px;
+}
+
+.FooterContent section {
+    display: inline-block;
+    width: 32%;
+}
+
+.FCTitle {
+    color: #daa520;
+    padding-bottom: 10px;
+}
+
+.FCliItems {
+    padding-right: 25px;
+    color: #daa520;
+}
+
+.FCliItems:hover {
+    text-decoration: underline;
+    color: #f0c741;
+    transition: all .3s;
+}
+
+.SocialNetworksSec {
+    text-align: center;
+    display: block !important;
+    width: 100% !important;
+    padding: 20px 0px;
+}
+
+.SocialIcon {
+    font-size: 30px !important;
+    padding-right: 15px;
+    color: #daa520;
+}
+
+.fa-telegram:hover {
+    color: rgb(57, 155, 212);
+}
+
+.fa-twitter:hover {
+    color: rgb(21, 150, 224);
+}
+
+.fa-youtube:hover {
+    color: rgb(192, 18, 18);
+}
+
+.fa-instagram:hover {
+    color: rgb(157, 57, 204);
+}
+
+
+/* End ofFooter Content */
+
+
+/* CopyRight */
+
+.CopyRight {
+    padding: 10px 20px 10px 0px;
+    color: #6495ed;
+    border-top: 2px solid rgba(131, 127, 127, 0.705);
+}
+
+
+/* end of copyright */
+
+
+/* End of Footer */
+
+
+/* End of Index Styles */
+
+
+/* Loginpage Styles */
+
+.LoginPageContainer {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../Images/Website/loginpage.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.LoginPageContainer::after {
+    position: absolute;
+    content: '';
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(55, 12, 85, 0.63);
+}
+
+.UserForm {
+    background-color: white;
+    width: 40%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 35px 0px 15px 0;
+    box-shadow: 11px 10px 17px 2px #1a1a1a;
+}
+
+.LoginFormSec {
+    text-align: center;
+    padding: 10px 0 10px 0;
+}
+
+.LoginFormSec a {
+    color: black;
+    border: 1px solid #0765c9;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.FormLoginBtn {
+    color: white !important;
+    padding: 5px 15px;
+    background-color: #0765c9;
+}
+
+.FormSignUpBtn {
+    padding: 5px 5px;
+}
+
+.FormSignUpBtn:hover {
+    transition: .5s;
+    background-color: #0765c9;
+    color: white !important;
+}
+
+.UserInputForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.UserInputForm section {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.UserInputForm section span {
+    font-size: 20px;
+}
+
+.UserInputForm input {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #0765c9;
+    outline: none;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    text-align: left;
+    width: 50%;
+}
+
+.LoginInbtn {
+    padding: 5px 10px;
+    background-color: #C61224;
+    color: white;
+    width: 20%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.LoginInbtn:hover {
+    transition: .5s;
+    background: linear-gradient(120deg, #C61224, #0765c9);
+    color: white;
+}
+
+.ForgotPass {
+    display: inline-block;
+    padding-right: 10px;
+    color: #535151;
+    font-size: 14px;
+    padding-bottom: 5px;
+    padding-top: 7px;
+}
+
+.ForgotPass:hover {
+    text-decoration: underline;
+}
+
+.SignInWith {
+    margin-top: 10px;
+    text-align: center;
+    padding: 5px 0px;
+    border-top: 1px solid rgba(83, 81, 81, 0.226);
+}
+
+.SignInWith h5 {
+    padding-bottom: 5px;
+}
+
+.SignInWith span {
+    font-size: 25px;
+    padding: 5px 7px;
+    width: 4%;
+}
+
+.fa-facebook {
+    background-color: #05305f;
+    color: white;
+}
+
+.fa-google {
+    background-color: rgb(192, 5, 24);
+    color: white;
+}

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BarcaIran</title>
+    <link rel="shortcut icon" href="Images/Website/FavIco.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="Styles/Styles.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="Js/Main.js"></script>
+</head>
+
+<body>
+    <header class="Header">
+        <section class="LogoUserSec">
+            <section class="UserLogin">
+                <a href="Signin.html" class="SignInButton"><span class="fa fa-user-o"></span>ورود / عضویت</a>
+            </section>
+            <section class="WebsiteLogoSec">
+                <a href="#" class="WebsiteLogo">
+                    <h2>BarcaIran.Ir</h2>
+                    <img src="Images/Website/Logo.png" alt="" />
+                </a>
+            </section>
+        </section>
+        <nav class="NavBar" id="DesktopNav">
+            <ul class="NavUl">
+                <li class="NavLi">
+                    <a href="#" class="NavItem"><span class="fa fa-home"></span>&nbsp;صفحه اصلی</a>
+                </li>
+                <li class="NavLi NewsLi">
+                    <a href="#" class="NavItem"><span class="fa fa-newspaper-o"></span>&nbsp;اخبار</a>
+                    <!-- News SubMenu -->
+                    <ul class="NavSubMenuUl">
+                        <li class="NavSubMenuLi">
+                            <a href="#"><span class="fa fa-newspaper-o"></span>&nbsp;اخبار</a>
+                        </li>
+                        <li class="NavSubMenuLi">
+                            <a href="#"><span class="fa fa-futbol-o"></span>&nbsp;بازی ها</a>
+                        </li>
+                        <li class="NavSubMenuLi">
+                            <a href="#"><span class="fa fa-trophy"></span>&nbsp;مسابقات</a>
+                        </li>
+                    </ul>
+                    <!--End of News SubMenu -->
+                </li>
+                <li class="NavLi">
+                    <a href="#" class="NavItem"><span class="fa fa-shopping-cart"></span>&nbsp;فروشگاه</a>
+                </li>
+                <li class="NavLi PlayersLi">
+                    <a href="#" class="NavItem"><span class="fa fa-diamond"></span>&nbsp;بازیکنان</a>
+                    <!-- Players Susbmenu -->
+                    <ul class="NavSubMenuUl">
+                        <li class="NavSubMenuLi">
+                            <a href="#"><span class="fa fa-star"></span>&nbsp;لیست</a>
+                        </li>
+                        <li class="NavSubMenuLi">
+                            <a href="#"><span class="fa fa-photo"></span>&nbsp;عکس</a>
+                        </li>
+                    </ul>
+                    <!-- End of  Players Susbmenu -->
+                </li>
+                <li class="NavLi">
+                    <a href="#" class="NavItem" onclick="ShowSearch()"><span class="fa fa-search">&nbsp;</span>جستجو</a>
+                </li>
+                <!-- SearchButton -->
+                <section id="SearchSection">
+                    <a href="#" class="CloseBtn" onclick="DismissSearch()"><span class="fa fa-remove"></span></a>
+                    <input class="SearchBox" type="text" placeholder="هرچی میخوای بنویس" />
+                    <a href="#" class="SearchBtn">جستجو</a>
+                </section>
+                <!--End Of SearchButton -->
+            </ul>
+        </nav>
+    </header>
+    <!-- Header Ends -->
+    <main class="Main">
+        <!-- This Sections will show next match Details -->
+        <Section class="NextMatchSec">
+            <!-- NMTItle -->
+            <section class="NMTitleSec SectionTitleSec">
+                <span class="STIcon NMTitleIcon fa fa-reply"></span> &nbsp; &nbsp;
+                <h3 class="STTitle NMTitle">بازی بعدی</h3>
+            </section>
+            <!-- End of NMTitle -->
+            <!-- MatchInformation Section -->
+            <section class="NMInfo">
+                <!-- This Section show Team1 Details -->
+                <section class="NMTeamsSec">
+                    <section class="NMTeamsLogoAndName"><img src="Images/Website/MatchLogo.png" alt="Barcelona">
+                        <h2 class="NMTeamName">بارسلونا</h2>
+                    </section>
+                    <section class="NMTeamStatus">
+                        <h4>5 بازی اخیر :</h4>
+                        <section>
+                            <h3 class="MatchWin">W</h3>&nbsp;
+                            <h3 class="MatchWin">W</h3>&nbsp;
+                            <h3 class="MatchWin">W</h3>&nbsp;
+                            <h3 class="MatchLoss">L</h3>&nbsp;
+                            <h3 class="MatchWin">W</h3>&nbsp;
+                        </section>
+                    </section>
+                </section>
+                <!-- End of team1 details -->
+                <!-- This section contain match details -->
+                <Section class="NMDetails">
+                    <!-- Tournmant logo -->
+                    <section>
+                        <h3>LaLiga</h3>&nbsp;<img class="NMTournmantImg" src="Images/Website/laliga.png" alt="Laliga"></section>
+                    <!-- Match Date And Time -->
+                    <section>
+                        <h3 class="NMTime">23:15</h3>
+                    </section>
+                    <section>
+                        <h4>یکشنبه، 17 خرداد</h4>
+                    </section>
+                    <!-- Referee and Stadium -->
+                    <section>
+                        <img src="Images/Website/Stadium.png" alt="Stadium">
+                        <h5>&nbsp; کمپ نو</h6>
+                    </section>
+                    <section>
+                        <img src="Images/Website/Referee.png" alt="Referee">
+                        <h5>&nbsp; گیل مانزانو</h5>
+                    </section>
+
+                </Section>
+                <!-- End Of Match Details -->
+                <!-- This Section show Team2 Details -->
+                <section class="NMTeamsSec">
+                    <section class="NMTeamsLogoAndName">
+                        <h2 class="NMTeamName">رئال مادرید</h2>
+                        <img src="Images/Website/realLogo.png" alt="realLogo">
+
+                    </section>
+                    <section class="NMTeamStatus">
+                        <h4>5 بازی اخیر :</h4>
+                        <section>
+                            <h3 class="MatchLoss">L</h3>&nbsp;
+                            <h3 class="MatchDraw">D</h3>&nbsp;
+                            <h3 class="MatchWin">W</h3>&nbsp;
+                            <h3 class="MatchLoss">L</h3>&nbsp;
+                            <h3 class="MatchWin">W</h3>&nbsp;
+                        </section>
+                    </section>
+                </section>
+                <!-- End of team2 details -->
+            </section>
+        </Section>
+        <!-- End of Next Match Section -->
+        <!-- Latest news Title -->
+        <section class="NMTitleSec SectionTitleSec">
+            <span class="STIcon NMTitleIcon fa fa-newspaper-o"></span> &nbsp; &nbsp;
+            <h3 class="STTitle NMTitle">جدیدترین خبر ها</h3>
+        </section>
+        <!--End of Latest news Title -->
+        <!-- Latest News Sec -->
+        <section class="LatestNewsSec">
+            <!-- Latest News Box -->
+            <section class="LNBox">
+                <!-- Latest News Img -->
+                <section class="LNImg"><img src="Images/News/messi.jpg" alt=""></section>
+                <!-- Latest News Details such as date, text and .. -->
+                <section class="LNDetails">
+                    <section class="LNDateTimeSec">
+                        <h5 class="LNDateTime"> <span class="fa fa-calendar-o"></span> &nbsp; یکشنبه، 15 خرداد 1398 </h5>
+                    </section>
+                    <section class="LNTitleSec">
+                        <h3 class="LNTitle">اظهار نظر تند کاپیتان در مورد اریک آبیدال</h3>
+                    </section>
+                    <section class="LNTextSec">
+                        <p class="LNText">
+                            تیم‌ها مایل به از سرگیری مجدد تمرینات هستند اما بنا به منابع نزدیک به باشگاه رئال مادرید هنوز فاصله زیادی تا این مرحله وجود دارد و به نظر آنها هیچ برنامه‌ای برای بازگشت به تمرینات وجود ندارد.لالیگا قصد دارد بازیکنان و کادر فنی تیم‌ها را در یک هتل یا در
+                            مجموعه تمرینی باشگاه قرنطینه کند و فقط برخی افراد خاص اجازه ورود به آنجا را داشته باشند. این موضوع پس از اینکه نتیجه آزمایش همه بازیکنان مشخص شد، از شیوع ویروس جلوگیری می‌کند.
+                        </p>
+                    </section>
+                    <!--End Latest News Details such as date, text and .. -->
+                    <!-- Latest News Button, Comment and heart icon -->
+                    <section class="LNActions">
+                        <section class="LNBtnSec"><a href="#" class="LNBtn">مشاهده خبر</a></section>
+                        <section class="LNFeedback">
+                            <span class="fa fa-heart HeartIcon"></span>
+                            <h3>1,415</h3>
+                            &nbsp;
+                            <span class="fa fa-comment CommentIcon"></span>
+                            <h3>147</h3>
+                        </section>
+                        <!-- End ofLatest News Button, Comment and heart icon -->
+                    </section>
+                    <!--End of Latest News Details such as date, text and .. -->
+                </section>
+                <!--End of Latest News Box.. -->
+            </section>
+            <!-- Latest News Box -->
+            <section class="LNBox">
+                <!-- Latest News Img -->
+                <section class="LNImg"><img src="Images/News/benzema.jpg" alt=""></section>
+                <!-- Latest News Details such as date, text and .. -->
+                <section class="LNDetails">
+                    <section class="LNDateTimeSec">
+                        <h5 class="LNDateTime"> <span class="fa fa-calendar-o"></span> &nbsp; یکشنبه، 15 خرداد 1398 </h5>
+                    </section>
+                    <section class="LNTitleSec">
+                        <h3 class="LNTitle">احتمال غیبت بنزما در الکلاسیکو پیش رو</h3>
+                    </section>
+                    <section class="LNTextSec">
+                        <p class="LNText">
+                            تیم‌ها مایل به از سرگیری مجدد تمرینات هستند اما بنا به منابع نزدیک به باشگاه رئال مادرید هنوز فاصله زیادی تا این مرحله وجود دارد و به نظر آنها هیچ برنامه‌ای برای بازگشت به تمرینات وجود ندارد.لالیگا قصد دارد بازیکنان و کادر فنی تیم‌ها را در یک هتل یا در
+                            مجموعه تمرینی باشگاه قرنطینه کند و فقط برخی افراد خاص اجازه ورود به آنجا را داشته باشند. این موضوع پس از اینکه نتیجه آزمایش همه بازیکنان مشخص شد، از شیوع ویروس جلوگیری می‌کند.
+                        </p>
+                    </section>
+                    <!--End Latest News Details such as date, text and .. -->
+                    <!-- Latest News Button, Comment and heart icon -->
+                    <section class="LNActions">
+                        <section class="LNBtnSec"><a href="#" class="LNBtn">مشاهده خبر</a></section>
+                        <section class="LNFeedback">
+                            <span class="fa fa-heart HeartIcon"></span>
+                            <h3>1,415</h3>
+                            &nbsp;
+                            <span class="fa fa-comment CommentIcon"></span>
+                            <h3>147</h3>
+                        </section>
+                        <!-- End ofLatest News Button, Comment and heart icon -->
+                    </section>
+                    <!--End of Latest News Details such as date, text and .. -->
+                </section>
+                <!--End of Latest News Box.. -->
+            </section>
+            <!-- Latest News Box -->
+            <section class="LNBox">
+                <!-- Latest News Img -->
+                <section class="LNImg"><img src="Images/News/coutinho.jpg" alt=""></section>
+                <!-- Latest News Details such as date, text and .. -->
+                <section class="LNDetails">
+                    <section class="LNDateTimeSec">
+                        <h5 class="LNDateTime"> <span class="fa fa-calendar-o"></span> &nbsp; یکشنبه، 15 خرداد 1398 </h5>
+                    </section>
+                    <section class="LNTitleSec">
+                        <h3 class="LNTitle">پیشنهاد رسمی چلسی برای خرید کوتینیو</h3>
+                    </section>
+                    <section class="LNTextSec">
+                        <p class="LNText">
+                            تیم‌ها مایل به از سرگیری مجدد تمرینات هستند اما بنا به منابع نزدیک به باشگاه رئال مادرید هنوز فاصله زیادی تا این مرحله وجود دارد و به نظر آنها هیچ برنامه‌ای برای بازگشت به تمرینات وجود ندارد.لالیگا قصد دارد بازیکنان و کادر فنی تیم‌ها را در یک هتل یا در
+                            مجموعه تمرینی باشگاه قرنطینه کند و فقط برخی افراد خاص اجازه ورود به آنجا را داشته باشند. این موضوع پس از اینکه نتیجه آزمایش همه بازیکنان مشخص شد، از شیوع ویروس جلوگیری می‌کند.
+                        </p>
+                    </section>
+                    <!--End Latest News Details such as date, text and .. -->
+                    <!-- Latest News Button, Comment and heart icon -->
+                    <section class="LNActions">
+                        <section class="LNBtnSec"><a href="#" class="LNBtn">مشاهده خبر</a></section>
+                        <section class="LNFeedback">
+                            <span class="fa fa-heart HeartIcon"></span>
+                            <h3>1,415</h3>
+                            &nbsp;
+                            <span class="fa fa-comment CommentIcon"></span>
+                            <h3>147</h3>
+                        </section>
+                        <!-- End ofLatest News Button, Comment and heart icon -->
+                    </section>
+                    <!--End of Latest News Details such as date, text and .. -->
+                </section>
+                <!--End of Latest News Box.. -->
+            </section>
+            <!-- Latest News Box -->
+            <section class="LNBox">
+                <!-- Latest News Img -->
+                <section class="LNImg"><img src="Images/News/neymar.jpg" alt=""></section>
+                <!-- Latest News Details such as date, text and .. -->
+                <section class="LNDetails">
+                    <section class="LNDateTimeSec">
+                        <h5 class="LNDateTime"> <span class="fa fa-calendar-o"></span> &nbsp; یکشنبه، 15 خرداد 1398 </h5>
+                    </section>
+                    <section class="LNTitleSec">
+                        <h3 class="LNTitle">علاقه نیمار برای بازگشت به تیم سابق خود</h3>
+                    </section>
+                    <section class="LNTextSec">
+                        <p class="LNText">
+                            تیم‌ها مایل به از سرگیری مجدد تمرینات هستند اما بنا به منابع نزدیک به باشگاه رئال مادرید هنوز فاصله زیادی تا این مرحله وجود دارد و به نظر آنها هیچ برنامه‌ای برای بازگشت به تمرینات وجود ندارد.لالیگا قصد دارد بازیکنان و کادر فنی تیم‌ها را در یک هتل یا در
+                            مجموعه تمرینی باشگاه قرنطینه کند و فقط برخی افراد خاص اجازه ورود به آنجا را داشته باشند. این موضوع پس از اینکه نتیجه آزمایش همه بازیکنان مشخص شد، از شیوع ویروس جلوگیری می‌کند.
+                        </p>
+                    </section>
+                    <!--End Latest News Details such as date, text and .. -->
+                    <!-- Latest News Button, Comment and heart icon -->
+                    <section class="LNActions">
+                        <section class="LNBtnSec"><a href="#" class="LNBtn">مشاهده خبر</a></section>
+                        <section class="LNFeedback">
+                            <span class="fa fa-heart HeartIcon"></span>
+                            <h3>1,415</h3>
+                            &nbsp;
+                            <span class="fa fa-comment CommentIcon"></span>
+                            <h3>147</h3>
+                        </section>
+                        <!-- End ofLatest News Button, Comment and heart icon -->
+                    </section>
+                    <!--End of Latest News Details such as date, text and .. -->
+                </section>
+                <!--End of Latest News Box.. -->
+            </section>
+        </section>
+        </section>
+        <!-- This Season Stats -->
+        <!-- Season stats title -->
+        <section class="NMTitleSec SectionTitleSec">
+            <span class="STIcon NMTitleIcon fa fa-futbol-o"></span> &nbsp; &nbsp;
+            <h3 class="STTitle NMTitle">آمار فصل جاری</h3>
+        </section>
+        <!-- Season stats title -->
+        <Section class="SeasonStatsSec">
+            <!-- This Section will hold season stats -->
+            <section class="SSMatches">
+                <img src="Images/Website/Wining.jpeg" class="SSImg" alt="">
+                <section class="SSText">
+                    <h1>برد</h1>
+                    <h3>42</h3>
+                </section>
+            </section>
+            <section class="SSMatches SSMatchesMR">
+                <img src="Images/Website/Games.jpg" class="SSImg" alt="">
+                <section class="SSText">
+                    <h1>بازی</h1>
+                    <h3>56</h3>
+                </section>
+            </section>
+            <section class="SSMatches">
+                <img src="Images/Website/Loss.jpeg" class="SSImg" alt="">
+                <section class="SSText">
+                    <h1>باخت</h1>
+                    <h3>6</h3>
+                </section>
+            </section>
+            <section class="SSMatches SSMatchesMR">
+                <img src="Images/Website/Draw.jpeg" class="SSImg" alt="">
+                <section class="SSText">
+                    <h1>مساوی</h1>
+                    <h3>8</h3>
+                </section>
+            </section>
+        </Section>
+        <!-- End of This Season Stats -->
+        <!-- Get Latest News Sec -->
+        <section class="GetNewsSec">
+            <p class="GetNews"><span class="fa fa-feed">&nbsp;&nbsp;</span>برای دریافت جدیدترین اخبار باشگاه به صورت فوری می توانید ایمیل خود را وارد کنید و عضو خبرنامه وبسایت <b>بارسا ایران </b> شوید.</p>
+            <section class="GetNewsActionsSec">
+
+                <input class="GNTxtBox" type="text" placeholder="ایمیل خود را وارد کنید.">
+                <br> <a href="#" class="GNBtn">ارسال</a>
+
+            </section>
+        </section>
+        <!-- End of Get Latest News Sec -->
+    </main>
+    <!-- End of main -->
+    <footer>
+        <!-- This section will hold website footer content -->
+        <section class="FooterContent">
+            <!-- This section will show website latest posts -->
+            <section class="FooterLatestPosts">
+                <h4 class="FCTitle">اخرین مطالب</h4>
+                <ul class="FCul">
+                    <li class="FCli"><a href="#" class="FCliItems">بازی بعدی</a></li>
+                    <li class="FCli"><a href="#" class="FCliItems">تمرینات قبل از بازی</a></li>
+                    <li class="FCli"><a href="#" class="FCliItems">مصاحبه کیکه ستین</a></li>
+                    <li class="FCli"><a href="#" class="FCliItems">انتقاد مسی از بارتومئو</a></li>
+                </ul>
+            </section>
+            <!-- End of show website latest posts -->
+            <!-- This section will show website latest posts -->
+            <section class="OtherWebsites">
+                <h4 class="FCTitle">سایر وبسایت ها</h4>
+                <ul class="FCul">
+                    <li class="FCli"><a href="#" class="FCliItems">وبسایت رسمی بارسلونا</a></li>
+                    <li class="FCli"><a href="#" class="FCliItems">وبسایت لالیکا</a></li>
+                    <li class="FCli"><a href="#" class="FCliItems">وبسایت هواداران اسپانیا</a></li>
+                    <li class="FCli"><a href="#" class="FCliItems">وبسایت لیگ جزیره</a></li>
+                </ul>
+            </section>
+            <!-- End of show website latest posts -->
+
+            <section class="SocialNetworksSec">
+                <a href="#"><span class="fa fa-twitter SocialIcon"></span></a>
+                <a href="#"> <span class="fa fa-youtube SocialIcon"></span></a>
+                <a href="#"> <span class="fa fa-telegram SocialIcon"></span></a>
+                <a href="#"> <span class="fa fa-instagram SocialIcon"></span></a>
+            </section>
+        </section>
+        <!--end of website footer content section -->
+
+        <section class="CopyRight"><span class="fa fa-copyright">&nbsp;</span>طراحی و توسعه توسط شرکت نرم افزاری شلبی </section>
+    </footer>
+</body>
+
+</html>
