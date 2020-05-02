@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>آمار بازیکنان</title>
+    <link rel="stylesheet" href="Styles/Styles.css" type="text/css" />
+    <link rel="shortcut icon" href="Images/Website/FavIco.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <header class="Header">
+        <section class="LogoUserSec">
+            <section class="UserLogin">
+                <a href="Signin.html" class="SignInButton"><span class="fa fa-user-o"></span>ورود / عضویت</a
+          >
+        </section>
+        <section class="WebsiteLogoSec">
+          <a href="index.html" class="WebsiteLogo">
+            <h2>BarcaIran.Ir</h2>
+            <img src="Images/Website/Logo.png" alt="" />
+          </a>
+            </section>
+        </section>
+        <nav class="NavBar" id="DesktopNav">
+            <ul class="NavUl">
+                <li class="NavLi">
+                    <a href="#" class="NavItem"><span class="fa fa-home"></span>&nbsp;صفحه اصلی</a
+            >
+          </li>
+          <li class="NavLi NewsLi">
+            <a href="#" class="NavItem"
+              ><span class="fa fa-newspaper-o"></span>&nbsp;اخبار</a
+            >
+            <!-- News SubMenu -->
+            <ul class="NavSubMenuUl">
+              <li class="NavSubMenuLi">
+                <a href="#"
+                  ><span class="fa fa-newspaper-o"></span>&nbsp;اخبار</a
+                >
+              </li>
+              <li class="NavSubMenuLi">
+                <a href="#"
+                  ><span class="fa fa-futbol-o"></span>&nbsp;بازی ها</a
+                >
+              </li>
+              <li class="NavSubMenuLi">
+                <a href="#"><span class="fa fa-trophy"></span>&nbsp;مسابقات</a>
+                </li>
+            </ul>
+            <!--End of News SubMenu -->
+            </li>
+            <li class="NavLi">
+                <a href="#" class="NavItem"><span class="fa fa-shopping-cart"></span>&nbsp;فروشگاه</a
+            >
+          </li>
+          <li class="NavLi PlayersLi">
+            <a href="PlayersPage.html" class="NavItem"
+              ><span class="fa fa-diamond"></span>&nbsp;بازیکنان</a
+            >
+            <!-- Players Susbmenu -->
+            <ul class="NavSubMenuUl">
+              <li class="NavSubMenuLi">
+                <a href="PlayersPage.html"
+                  ><span class="fa fa-star"></span>&nbsp;لیست</a
+                >
+              </li>
+              <li class="NavSubMenuLi">
+                <a href="PlayersPage.html"
+                  ><span class="fa fa-photo"></span>&nbsp;عکس</a
+                >
+              </li>
+            </ul>
+            <!-- End of  Players Susbmenu -->
+          </li>
+          <li class="NavLi">
+            <a href="#" class="NavItem" onclick="ShowSearch()"
+              ><span class="fa fa-search">&nbsp;</span>جستجو</a
+            >
+          </li>
+          <!-- SearchButton -->
+          <section id="SearchSection">
+            <a href="#" class="CloseBtn" onclick="DismissSearch()"
+              ><span class="fa fa-remove"></span
+            ></a>
+                <input class="SearchBox" type="text" placeholder="هرچی میخوای بنویس" />
+                <a href="#" class="SearchBtn">جستجو</a>
+                </section>
+                <!--End Of SearchButton -->
+                </ul>
+        </nav>
+    </header>
+    <!-- Header Ends -->
+    <main>
+        <section class="PlayersSection">
+            <!-- This section contain player stats -->
+            <section class="PlayersStats">
+                <section class="PlayerBio">
+                    <h1>بیوگرافی</h1>
+                    <p class="PlayerBioText">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                        باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت
+                        ...
+                    </p>
+                    <a href="#" class="ResumeBioBtn">ادامه متن &nbsp;<span class="fa fa-chevron-down"></span
+            ></a>
+                </section>
+                <section>
+                    <h3 class="Align-Center PlayerStatsTitle">
+                        <img src="Images/Website/StatsIcon.svg" width="35px" height="35px" alt="" /> &nbsp; آمار فصل جاری
+                    </h3>
+                    <!-- this season just show this season stats -->
+                    <section class="PlayerStats">
+                        <!-- This boxes will show player stats -->
+                        <section class="PTSStatsBox">
+                            <img src="Images/Website/playcount.svg" alt="football ball" class="PTSStatsIcon" />
+                            <h2>
+                                52 بازی
+                            </h2>
+                        </section>
+                        <section class="PTSStatsBox">
+                            <img src="Images/Website/Ball.svg" alt="football ball" class="PTSStatsIcon" />
+                            <h2>
+                                47 گل
+                            </h2>
+                        </section>
+                        <section class="PTSStatsBox">
+                            <img src="Images/Website/assist.svg" alt=" football ball " class="PTSStatsIcon" />
+                            <h2>
+                                22 پاس گل
+                            </h2>
+                        </section>
+                        <section class="PTSStatsBox">
+                            <img src="Images/Website/yellowcard.svg" alt=" football ball " class="PTSStatsIcon" />
+                            <h2>
+                                2 کارت زرد
+                            </h2>
+                        </section>
+                        <section class="PTSStatsBox">
+                            <img src="Images/Website/redcard.svg" alt=" football ball " class="PTSStatsIcon" />
+                            <h2>
+                                0 کارت قرمز
+                            </h2>
+                        </section>
+                    </section>
+                </section>
+                <section class="AllTimeStats">
+                    <h3 class="Align-Center PlayerStatsTitle">
+                        <img src="Images/Website/fire.svg" width="35px" height="35px" alt="" /> &nbsp; آمار کلی
+                    </h3>
+                    <!-- this season just show this season stats -->
+                    <section class="PlayerStats">
+                        <!-- This boxes will show player stats -->
+                        <section class="PTSStatsBox">
+                            <img src="Images/Website/playcount.svg" alt="football ball" class="PTSStatsIcon" />
+                            <h2>
+                                712 بازی
+                            </h2>
+                        </section>
+                        <section class="PTSStatsBox">
+                            <img src="Images/Website/Ball.svg" alt="football ball" class="PTSStatsIcon" />
+                            <h2>
+                                766 گل
+                            </h2>
+                        </section>
+                        <section class="PTSStatsBox">
+                            <img src="Images/Website/assist.svg" alt=" football ball " class="PTSStatsIcon" />
+                            <h2>
+                                412 پاس گل
+                            </h2>
+                        </section>
+                        <section class="PTSStatsBox">
+                            <img src="Images/Website/yellowcard.svg" alt=" football ball " class="PTSStatsIcon" />
+                            <h2>
+                                21 کارت زرد
+                            </h2>
+                        </section>
+                        <section class="PTSStatsBox">
+                            <img src="Images/Website/redcard.svg" alt=" football ball " class="PTSStatsIcon" />
+                            <h2>
+                                1 کارت قرمز
+                            </h2>
+                        </section>
+                    </section>
+                </section>
+                <!-- This section will provide player trophy and rewards -->
+                <section class="PlayerTrophies">
+                    <h3 class="Align-Center PlayerStatsTitle">
+                        <img src="Images/Website/cup.svg" width="35px" height="35px" alt="" /> &nbsp; افتخارات
+                    </h3>
+                    <section>
+                        <section class="PTSStatsBox TrophyBox">
+                            <img src="Images/Website/cup3.svg" alt=" football ball " class="PTSStatsIcon" />
+                            <h2>
+                                4 لیگ قهرمانان
+                            </h2>
+                        </section>
+                        <section class="PTSStatsBox TrophyBox">
+                            <img src="Images/Website/cup2.svg" alt=" football ball " class="PTSStatsIcon" />
+                            <h2>
+                                11 لالیگا
+                            </h2>
+                        </section>
+                        <section class="PTSStatsBox TrophyBox">
+                            <img src="Images/Website/cup3.svg" alt=" football ball " class="PTSStatsIcon" />
+                            <h2>
+                                3 جام باشگاه های جهان
+                            </h2>
+                        </section>
+                        <section class="PTSStatsBox TrophyBox">
+                            <img src="Images/Website/cup2.svg" alt=" football ball " class="PTSStatsIcon" />
+                            <h2>
+                                9 کوپا دل ری
+                            </h2>
+                        </section>
+                        <section class="PTSStatsBox TrophyBox">
+                            <img src="Images/Website/cup3.svg" alt=" football ball " class="PTSStatsIcon" />
+                            <h2>
+                                6 سوپر کاپ اروپا
+                            </h2>
+                        </section>
+                        <section class="PTSStatsBox TrophyBox">
+                            <img src="Images/Website/cup2.svg" alt=" football ball " class="PTSStatsIcon" />
+                            <h2>
+                                8 سوپر کاپ اسپانیا
+                            </h2>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <section class="PlayersInfo">
+                <!-- This section will show players main info such as name and age -->
+                <img src="Images/Playerstats/messi.png " alt=" " />
+                <section class="PlayersInfoTable">
+                    <section>
+                        نام : لیونل آندرس مسی
+                    </section>
+                    <section>
+                        متولد 11 اکتبر 2001
+                    </section>
+                    <section>
+                        پست: وینگر راست
+                    </section>
+                    <section>
+                        ملیت : آرژانتین
+                    </section>
+                </section>
+            </section>
+        </section>
+        <!-- This section contain other players -->
+        <h2 class="OtherPlayersTitle">
+            سایر بازیکنان &nbsp; <span class="fa fa-chevron-circle-down"></span>
+        </h2>
+        <section class="OtherPlayersSec">
+            <section class="OtherPlayersBox">
+                <img src="Images/Playerstats/suarez.png" alt="" />
+                <a href="#" class="SeePlayerInfo">مشاهده مشخصات</a>
+            </section>
+            <section class="OtherPlayersBox">
+                <img src="Images/Playerstats/pique.png" alt="" />
+                <a href="#" class="SeePlayerInfo">مشاهده مشخصات</a>
+            </section>
+
+            <section class="OtherPlayersBox">
+                <img src="Images/Playerstats/busquets.png" alt="" />
+                <a href="#" class="SeePlayerInfo">مشاهده مشخصات</a>
+            </section>
+            <section class="OtherPlayersBox">
+                <img src="Images/Playerstats/terstegen.png" alt="" />
+                <a href="#" class="SeePlayerInfo">مشاهده مشخصات</a>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <!-- This section will hold website footer content -->
+        <section class="FooterContent">
+            <!-- This section will show website latest posts -->
+            <section class="FooterLatestPosts">
+                <h4 class="FCTitle">اخرین مطالب</h4>
+                <ul class="FCul">
+                    <li class="FCli"><a href="# " class="FCliItems">بازی بعدی</a></li>
+                    <li class="FCli">
+                        <a href="# " class="FCliItems">تمرینات قبل از بازی</a>
+                    </li>
+                    <li class="FCli">
+                        <a href="# " class="FCliItems">مصاحبه کیکه ستین</a>
+                    </li>
+                    <li class="FCli">
+                        <a href="# " class="FCliItems">انتقاد مسی از بارتومئو</a>
+                    </li>
+                </ul>
+            </section>
+            <!-- End of show website latest posts -->
+            <!-- This section will show website latest posts -->
+            <section class="OtherWebsites">
+                <h4 class="FCTitle">سایر وبسایت ها</h4>
+                <ul class="FCul">
+                    <li class="FCli">
+                        <a href="# " class="FCliItems">وبسایت رسمی بارسلونا</a>
+                    </li>
+                    <li class="FCli">
+                        <a href="# " class="FCliItems">وبسایت لالیکا</a>
+                    </li>
+                    <li class="FCli">
+                        <a href="# " class="FCliItems">وبسایت هواداران اسپانیا</a>
+                    </li>
+                    <li class="FCli">
+                        <a href="# " class="FCliItems">وبسایت لیگ جزیره</a>
+                    </li>
+                </ul>
+            </section>
+            <!-- End of show website latest posts -->
+
+            <section class="SocialNetworksSec">
+                <a href="# "><span class="fa fa-twitter SocialIcon"></span></a>
+                <a href="# "> <span class="fa fa-youtube SocialIcon"></span></a>
+                <a href="# "> <span class="fa fa-telegram SocialIcon"></span></a>
+                <a href="# "> <span class="fa fa-instagram SocialIcon"></span></a>
+            </section>
+        </section>
+        <!--end of website footer content section -->
+
+        <section class="CopyRight">
+            <span class="fa fa-copyright">&nbsp;</span>طراحی و توسعه توسط شرکت نرم افزاری شلبی
+        </section>
+    </footer>
+</body>
+
+</html>

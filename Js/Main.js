@@ -1,11 +1,9 @@
-This Functions Will show and dismiss searchBox
-
-function DismissSearch() {
-    let SrchSec = document.getElementById("SearchSection");
-    SrchSec.classList.remove("ShowSearch");
+function WhiteBg() {
+    var tag = document.getElementById("Loginbtn");
+    tag.classList.add("WhiteBg");
 }
 
-function ShowSearch() {
-    let SrchSec = document.getElementById("SearchSection");
-    SrchSec.classList.add("ShowSearch");
+function DefaultBg() {
+    var tag = document.getElementById("Loginbtn");
+    tag.classList.remove("WhiteBg");
 }
