@@ -1,0 +1,292 @@
+                            @media screen and (max-width:576px) {
+                                /* Index Styles */
+                                .BurgerMenuBtn {
+                                    visibility: visible;
+                                    position: static;
+                                }
+                                header nav {
+                                    visibility: hidden;
+                                    position: absolute;
+                                }
+                                .SignInButton {
+                                    font-size: 12px;
+                                    padding: 7px;
+                                }
+                                .WebsiteLogo {
+                                    font-size: 14px;
+                                }
+                                .LogoUserSec {
+                                    display: flex;
+                                }
+                                .NMInfo {
+                                    width: 100%;
+                                    display: flex;
+                                    flex-direction: column;
+                                }
+                                .NMDetails {
+                                    width: 100%;
+                                }
+                                .NMTeamsSec {
+                                    width: 100%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    align-items: center;
+                                    margin: 35px 0;
+                                }
+                                .NMDetails::after {
+                                    position: absolute;
+                                    content: '';
+                                    top: 1%;
+                                    left: 25%;
+                                    width: 50%;
+                                    height: 3px;
+                                    background-color: #7B14C4;
+                                }
+                                .NMDetails::before {
+                                    position: absolute;
+                                    content: '';
+                                    top: 99%;
+                                    left: 25%;
+                                    width: 50%;
+                                    height: 3px;
+                                    background-color: #7B14C4
+                                }
+                                .LNBox {
+                                    flex-direction: column;
+                                }
+                                .LnImg {
+                                    width: 100%;
+                                }
+                                .LNImg img {
+                                    width: 100%;
+                                }
+                                .LNBtn {
+                                    width: 100px;
+                                }
+                                .LNDateTime {
+                                    padding-top: 15px;
+                                }
+                                .LNTitle {
+                                    margin-bottom: 10px;
+                                }
+                                .SeasonStatsSec {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                }
+                                .SSMatches {
+                                    width: 98%;
+                                    padding: 0;
+                                    margin: 0;
+                                    margin-bottom: 15px;
+                                }
+                                .GetNews {
+                                    padding: 15px 2%;
+                                    text-align: justify;
+                                    font-size: 14px;
+                                }
+                                .GNTxtBox {
+                                    width: 60%;
+                                }
+                                .FooterContent {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                }
+                                .FooterContent section {
+                                    display: block;
+                                    width: 100%;
+                                }
+                                /* End Index Styles */
+                                /* Signin.html styles */
+                                .LoginPageContainer {
+                                    background: none;
+                                }
+                                .UserForm {
+                                    height: 100%;
+                                    width: 100%;
+                                }
+                                .SignInWith span {
+                                    width: 10%;
+                                }
+                                .LoginFormSec {
+                                    position: relative;
+                                    top: -10%;
+                                }
+                                /* End of Signin.html styles */
+                                /* News.html Styles */
+                                .NewsContentHolder img {
+                                    width: 100%;
+                                }
+                                .NewsContent h1 {
+                                    font-size: 18px;
+                                }
+                                .NewsContent p {
+                                    font-size: 14px;
+                                }
+                                .NewsContent h1 {
+                                    font-size: 12px;
+                                }
+                                .UserCommentInfotxt {
+                                    margin-bottom: 12px;
+                                }
+                                .UserCommentTexttxt {
+                                    width: 75%;
+                                    min-width: 70%;
+                                    max-width: 80%;
+                                }
+                                /*End of News.html Styles */
+                                /* PlayersPage.html Styles */
+                                .PlayersSection {
+                                    flex-direction: column;
+                                }
+                                .PlayersInfo {
+                                    order: 1;
+                                    width: 100%;
+                                }
+                                .PlayersStats {
+                                    order: 2;
+                                    width: calc(100% - 10%);
+                                }
+                                .PlayerBioText {
+                                    text-align: justify;
+                                }
+                                /*End of PlayersPage.html Styles */
+                            }
+                            
+                            @media screen and (max-width:768px) {
+                                /* Index Styles */
+                                .BurgerMenuBtn {
+                                    visibility: visible;
+                                    position: static;
+                                }
+                                header nav {
+                                    visibility: hidden;
+                                    position: absolute;
+                                }
+                                .NMInfo {
+                                    width: 100%;
+                                    display: flex;
+                                    flex-direction: column;
+                                }
+                                .NMDetails {
+                                    width: 100%;
+                                }
+                                .NMTeamsSec {
+                                    width: 100%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    align-items: center;
+                                    margin: 35px 0;
+                                }
+                                .NMDetails::after {
+                                    position: absolute;
+                                    content: '';
+                                    top: 1%;
+                                    left: 25%;
+                                    width: 50%;
+                                    height: 3px;
+                                    background-color: #7B14C4;
+                                }
+                                .NMDetails::before {
+                                    position: absolute;
+                                    content: '';
+                                    top: 99%;
+                                    left: 25%;
+                                    width: 50%;
+                                    height: 3px;
+                                    background-color: #7B14C4
+                                }
+                                .LNBox {
+                                    flex-direction: column;
+                                }
+                                .LNImg {
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: center;
+                                }
+                                .LNImg img {
+                                    width: 80%;
+                                }
+                                .LNDateTime {
+                                    padding-top: 15px;
+                                }
+                                .LNTitle {
+                                    margin-bottom: 10px;
+                                }
+                                .SeasonStatsSec {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                }
+                                .SSMatches {
+                                    width: 80%;
+                                    padding: 0;
+                                    margin: 0;
+                                    margin-bottom: 15px;
+                                }
+                                /* End ofIndex Styles */
+                                /* Signin.html styles */
+                                .LoginPageContainer {
+                                    background: none;
+                                }
+                                .UserForm {
+                                    height: 100%;
+                                    width: 100% !important;
+                                }
+                                .SignInWith span {
+                                    width: 6%;
+                                }
+                                .LoginFormSec {
+                                    position: relative;
+                                    top: -10%;
+                                }
+                                /* End of Signin.html styles */
+                                /* News.html Styles */
+                                .NewsContentHolder img {
+                                    width: 80%;
+                                }
+                                .UserCommentTexttxt {
+                                    width: 75%;
+                                    min-width: 70%;
+                                    max-width: 80%;
+                                }
+                                /* End of News.html Styles */
+                            }
+                            
+                            @media screen and (max-width:1200px) {
+                                /* Index Styles */
+                                .NavItem {
+                                    font-size: 16px;
+                                }
+                                .NMTeamStatus h4 {
+                                    left: 20px;
+                                }
+                                .LNBtn {
+                                    width: 86px;
+                                }
+                                .SSText h1 {
+                                    font-size: 45px;
+                                }
+                                .SSText h3 {
+                                    font-size: 50px;
+                                }
+                                /* End of Index Styles */
+                                /* Signin.html styles */
+                                .UserForm {
+                                    width: 50%;
+                                }
+                                .SignInWith span {
+                                    width: 5%;
+                                }
+                                /* End of Signin.html styles */
+                                /* News.html Styles */
+                                .UserCommentTexttxt {
+                                    width: 65%;
+                                    min-width: 60%;
+                                    max-width: 70%;
+                                }
+                                /* End of News.html Styles */
+                            }

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BarcaIran</title>
+    <link rel="shortcut icon" href="Images/Website/FavIco.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="Styles/Styles.css" />
+    <link rel="stylesheet" href="Styles/Media-Queries.css" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="Js/Main.js"></script>
+</head>
+
+<body>
+    <header class="Header">
+        <section class="LogoUserSec">
+            <section class="UserLogin">
+                <a href="Signin.html" class="SignInButton"><span class="fa fa-user-o"></span>ورود / عضویت</a
+          >
+        </section>
+        <section class="WebsiteLogoSec">
+          <a href="index.html" class="WebsiteLogo">
+            <h2>BarcaIran.Ir</h2>
+            <img src="Images/Website/Logo.png" alt="" />
+          </a>
+            </section>
+        </section>
+        <nav class="NavBar" id="DesktopNav">
+            <ul class="NavUl">
+                <li class="NavLi">
+                    <a href="index.html" class="NavItem"><span class="fa fa-home"></span>&nbsp;صفحه اصلی</a
+            >
+          </li>
+          <li class="NavLi NewsLi">
+            <a href="#" class="NavItem"
+              ><span class="fa fa-newspaper-o"></span>&nbsp;اخبار</a
+            >
+            <!-- News SubMenu -->
+            <ul class="NavSubMenuUl">
+              <li class="NavSubMenuLi">
+                <a href="News.html"
+                  ><span class="fa fa-newspaper-o"></span>&nbsp;اخبار</a
+                >
+              </li>
+              <li class="NavSubMenuLi">
+                <a href="News.html"
+                  ><span class="fa fa-futbol-o"></span>&nbsp;بازی ها</a
+                >
+              </li>
+              <li class="NavSubMenuLi">
+                <a href="News.html"
+                  ><span class="fa fa-trophy"></span>&nbsp;مسابقات</a
+                >
+              </li>
+            </ul>
+            <!--End of News SubMenu -->
+          </li>
+          <li class="NavLi">
+            <a href="#" class="NavItem"
+              ><span class="fa fa-shopping-cart"></span>&nbsp;فروشگاه</a
+            >
+          </li>
+          <li class="NavLi PlayersLi">
+            <a href="PlayersPage.html" class="NavItem"
+              ><span class="fa fa-diamond"></span>&nbsp;بازیکنان</a
+            >
+            <!-- Players Susbmenu -->
+            <ul class="NavSubMenuUl">
+              <li class="NavSubMenuLi">
+                <a href="PlayersPage.html"
+                  ><span class="fa fa-star"></span>&nbsp;لیست</a
+                >
+              </li>
+              <li class="NavSubMenuLi">
+                <a href="PlayersPage.html"
+                  ><span class="fa fa-photo"></span>&nbsp;عکس</a
+                >
+              </li>
+            </ul>
+            <!-- End of  Players Susbmenu -->
+          </li>
+          <li class="NavLi">
+            <a href="#" class="NavItem" onclick="ShowSearch()"
+              ><span class="fa fa-search">&nbsp;</span>جستجو</a
+            >
+          </li>
+          <!-- SearchButton -->
+          <section id="SearchSection">
+            <a href="#" class="CloseBtn" onclick="DismissSearch()"
+              ><span class="fa fa-remove"></span
+            ></a>
+                    <input class="SearchBox" type="text" placeholder="هرچی میخوای بنویس" />
+                    <a href="#" class="SearchBtn">جستجو</a>
+                    </section>
+                    <!--End Of SearchButton -->
+            </ul>
+        </nav>
+        <a href="#" class="BurgerMenuBtn"><span class="fa fa-bars"></span></a>
+    </header>
+    <!-- Header Ends -->
+    <main>
+        <!-- News Content -->
+        <article class="NewsContentHolder">
+            <img src="Images/News/messi2.jpg" alt="" />
+            <section class="NewsContent">
+                <h1 class="NewsPageTitle">
+                    عصبانیت شدید کاپیتان / اعتراض مسی به حرف های آبیدال
+                </h1>
+                <p>
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                    باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می
+                    توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.لورم ایپسوم متن ساختگی
+                    با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+                    کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان
+                    امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                    <br />
+                    <br />لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف
+                    بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی
+                    ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار
+                    گیرد. <br />
+                    <br />اگر شما یک طراح هستین و یا با طراحی های گرافیکی سروکار دارید به متن های برخورده اید که با نام لورم ایپسوم شناخته می‌شوند. لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) متنی ساختگی و بدون معنی است که برای امتحان فونت و یا پر
+                    کردن فضا در یک طراحی گرافیکی و یا صنعت چاپ استفاده میشود. طراحان وب و گرافیک از این متن برای پرکردن صفحه و ارائه شکل کلی طرح استفاده می‌کنند.
+                </p>
+                <p class="NewsInfo">14 اردیبهشت 1398 | ارسال توسط فرید قادری</p>
+            </section>
+        </article>
+        <!-- Comments Section -->
+        <section class="CommentSecHolder">
+            <!-- This section contain inputs for send comment -->
+            <section class="SendCommentSec">
+                <h1><span class="fa fa-comment"></span> ارسال نظر</h1>
+                <section>
+                    <input type="text" placeholder="نام و نام خانوادگی" class="UserCommentInfotxt" />
+                    <input type="email" placeholder="ایمیل" class="UserCommentInfotxt" />
+                    <br />
+                    <textarea class="UserCommentTexttxt UserCommentInfotxt" placeholder="متن کامنت"></textarea>
+                    <br />
+                    <a href="#" class="SendCommentBtn">ارسال نظر</a>
+                </section>
+            </section>
+            <!-- This Section Will show comments that users sent for this news -->
+            <section class="NewsComment">
+                <h1 class="NewsCommentTitle">
+                    نظرات کاربران
+                </h1>
+                <!-- This section will show users comments -->
+                <section class="UserComment">
+                    <section class="UserCommentDetails">
+                        <section class="UserCommentDetailsProfile">
+                            <img src="Images/Users/MorganFreeman.jpg" alt="user image" />
+                        </section>
+                        <section class="UserCommentDetailsInfo">
+                            <h4>مورگان فریمن</h4>
+                            <h6>دوشنبه 7 اردیبهشت 1398 | ساعت 23:12</h6>
+                            <p>
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                                باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای
+                            </p>
+                        </section>
+                    </section>
+
+                    <section class="UserCommentAcctions">
+                        <a href="#" class="CommentBtn ReplyCommentBtn"><span class="fa fa-reply"></span>پاسخ</a
+              >
+              <a href="#" class="CommentBtn LikeCommentBtn"
+                >&nbsp;<span class="fa fa-thumbs-up"></span
+              ></a> 14
+                    </section>
+                </section>
+                <!--  -->
+                <section class="UserComment">
+                    <section class="UserCommentDetails">
+                        <section class="UserCommentDetailsProfile">
+                            <img src="Images/Users/lebron.jpeg" alt="user image" />
+                        </section>
+                        <section class="UserCommentDetailsInfo">
+                            <h4>لبرون جیمز</h4>
+                            <h6>دوشنبه 7 اردیبهشت 1398 | ساعت 23:12</h6>
+                            <p>
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                                باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای
+                            </p>
+                        </section>
+                    </section>
+
+                    <section class="UserCommentAcctions">
+                        <a href="#" class="CommentBtn ReplyCommentBtn"><span class="fa fa-reply"></span>پاسخ</a
+              >
+              <a href="#" class="CommentBtn LikeCommentBtn"
+                >&nbsp;<span class="fa fa-thumbs-up"></span
+              ></a> 14
+                    </section>
+                </section>
+                <!--  -->
+                <section class="UserComment">
+                    <section class="UserCommentDetails">
+                        <section class="UserCommentDetailsProfile">
+                            <img src="Images/Users/mathew.jpg" alt="user image" />
+                        </section>
+                        <section class="UserCommentDetailsInfo">
+                            <h4>متئو پری</h4>
+                            <h6>دوشنبه 7 اردیبهشت 1398 | ساعت 23:12</h6>
+                            <p>
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                                باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای
+                            </p>
+                        </section>
+                    </section>
+
+                    <section class="UserCommentAcctions">
+                        <a href="#" class="CommentBtn ReplyCommentBtn"><span class="fa fa-reply"></span>پاسخ</a
+              >
+              <a href="#" class="CommentBtn LikeCommentBtn"
+                >&nbsp;<span class="fa fa-thumbs-up"></span
+              ></a> 14
+                    </section>
+                    <section class="UserComment UserCommentReply">
+                        <section class="UserCommentDetails">
+                            <section class="UserCommentDetailsProfile">
+                                <img src="Images/Users/joey.jpeg" alt="user image" />
+                            </section>
+                            <section class="UserCommentDetailsInfo">
+                                <h4>مت لی بلانک</h4>
+                                <h6>دوشنبه 7 اردیبهشت 1398 | ساعت 23:12</h6>
+                                <p>
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                                    باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای
+                                </p>
+                            </section>
+                        </section>
+
+                        <section class="UserCommentAcctions">
+                            <a href="#" class="CommentBtn ReplyCommentBtn"><span class="fa fa-reply"></span>پاسخ</a
+                >
+                <a href="#" class="CommentBtn LikeCommentBtn"
+                  >&nbsp;<span class="fa fa-thumbs-up"></span
+                ></a> 14
+                        </section>
+                    </section>
+                </section>
+                <section class="UserComment">
+                    <section class="UserCommentDetails">
+                        <section class="UserCommentDetailsProfile">
+                            <img src="Images/Users/navid.png" alt="user image" />
+                        </section>
+                        <section class="UserCommentDetailsInfo">
+                            <h4>نوید محمد زاده</h4>
+                            <h6>دوشنبه 7 اردیبهشت 1398 | ساعت 23:12</h6>
+                            <p>
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                            </p>
+                        </section>
+                    </section>
+
+                    <section class="UserCommentAcctions">
+                        <a href="#" class="CommentBtn ReplyCommentBtn"><span class="fa fa-reply"></span>پاسخ</a
+              >
+              <a href="#" class="CommentBtn LikeCommentBtn"
+                >&nbsp;<span class="fa fa-thumbs-up"></span
+              ></a> 14
+                    </section>
+                </section>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <!-- This section will hold website footer content -->
+        <section class="FooterContent">
+            <!-- This section will show website latest posts -->
+            <section class="FooterLatestPosts">
+                <h4 class="FCTitle">اخرین مطالب</h4>
+                <ul class="FCul">
+                    <li class="FCli"><a href="#" class="FCliItems">بازی بعدی</a></li>
+                    <li class="FCli">
+                        <a href="#" class="FCliItems">تمرینات قبل از بازی</a>
+                    </li>
+                    <li class="FCli">
+                        <a href="#" class="FCliItems">مصاحبه کیکه ستین</a>
+                    </li>
+                    <li class="FCli">
+                        <a href="#" class="FCliItems">انتقاد مسی از بارتومئو</a>
+                    </li>
+                </ul>
+            </section>
+            <!-- End of show website latest posts -->
+            <!-- This section will show website latest posts -->
+            <section class="OtherWebsites">
+                <h4 class="FCTitle">سایر وبسایت ها</h4>
+                <ul class="FCul">
+                    <li class="FCli">
+                        <a href="#" class="FCliItems">وبسایت رسمی بارسلونا</a>
+                    </li>
+                    <li class="FCli">
+                        <a href="#" class="FCliItems">وبسایت لالیکا</a>
+                    </li>
+                    <li class="FCli">
+                        <a href="#" class="FCliItems">وبسایت هواداران اسپانیا</a>
+                    </li>
+                    <li class="FCli">
+                        <a href="#" class="FCliItems">وبسایت لیگ جزیره</a>
+                    </li>
+                </ul>
+            </section>
+            <!-- End of show website latest posts -->
+
+            <section class="SocialNetworksSec">
+                <a href="#"><span class="fa fa-twitter SocialIcon"></span></a>
+                <a href="#"> <span class="fa fa-youtube SocialIcon"></span></a>
+                <a href="#"> <span class="fa fa-telegram SocialIcon"></span></a>
+                <a href="#"> <span class="fa fa-instagram SocialIcon"></span></a>
+            </section>
+        </section>
+        <!--end of website footer content section -->
+
+        <section class="CopyRight">
+            <span class="fa fa-copyright">&nbsp;</span>طراحی و توسعه توسط شرکت نرم افزاری شلبی
+        </section>
+    </footer>
+</body>
+
+</html>

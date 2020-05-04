@@ -125,6 +125,17 @@ ul {
     background-color: #136ac7;
 }
 
+.BurgerMenuBtn {
+    display: inline-block;
+    font-size: 25px;
+    background-color: #fff;
+    color: black;
+    padding: 1px 14px;
+    margin: 0px 15px 15px 0px;
+    visibility: hidden;
+    position: absolute;
+}
+
 .NavLi {
     padding-left: 10px;
     display: inline-flex;
@@ -1014,15 +1025,15 @@ footer {
 }
 
 .PlayersInfoTable {
-    background-color: rgb(27, 124, 204);
+    background-color: #f0f8ff;
     width: 100%;
-    color: black;
+    color: #7B14C4;
     position: relative;
 }
 
 .PlayersInfoTable section {
     text-align: center;
-    border-bottom: 1px solid #696666a2;
+    border-bottom: 1px solid rgba(189, 6, 6, 0.534);
     font-size: 20px;
     font-weight: bold;
     padding: 10px 0;
@@ -1086,6 +1097,218 @@ footer {
 .SeePlayerInfo:hover {
     transition: .4s;
     background-color: #0765c9;
+}
+
+
+/* End of players page */
+
+
+/* News Page */
+
+.NewsPageTitle {
+    position: relative;
+}
+
+.NewsPageTitle::before {
+    position: absolute;
+    content: '';
+    top: 15px;
+    width: 5px;
+    left: 98%;
+    height: 100%;
+    background: linear-gradient(to bottom, #0765c9, #C61224);
+}
+
+.NewsContentHolder {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.NewsContentHolder img {
+    width: 50%;
+    padding-bottom: 10px;
+}
+
+.NewsInfo {
+    color: #535151;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+.NewsContent {
+    padding-right: 10px;
+    width: calc(100% - 10px);
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+
+.NewsContent h1 {
+    padding-top: 25px;
+    padding-right: 30px;
+    font-size: 20px;
+}
+
+.NewsContent p {
+    text-align: justify;
+    padding: 22px 40px;
+}
+
+.SendCommentSec {
+    display: block;
+    padding: 15px 10px;
+    border-top: 1px solid #1a1a1a79;
+}
+
+.SendCommentSec h1 {
+    padding-bottom: 15px;
+    color: #0765c9;
+}
+
+.SendCommentSec h1 span {
+    margin-left: 6px;
+}
+
+.SendCommentSec section {
+    text-align: right;
+    padding: 7px 30px 7px 0px;
+}
+
+.UserCommentInfotxt {
+    text-align: right;
+    padding: 7px 12px;
+    border: 1px solid #1a1a1a3f;
+}
+
+.UserCommentInfotxt:active {
+    border: 1px solid #C61224;
+}
+
+.UserCommentTexttxt {
+    text-align: right;
+    /* display: block; */
+    height: 200px;
+    width: 40%;
+    margin-top: 15px;
+    max-width: 40%;
+    max-height: 250px;
+    min-width: 40%;
+    min-height: 200px;
+}
+
+.SendCommentBtn {
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 7px 13px;
+    background-color: #C61224;
+    color: white;
+    border: none;
+}
+
+.SendCommentBtn:hover {
+    transition: .4s;
+    background-color: rgb(231, 26, 47);
+}
+
+.NewsComment {
+    padding-top: 30px;
+    margin-top: 20px;
+    border-top: 1px solid #535151;
+    margin-bottom: 40px;
+}
+
+.NewsCommentTitle {
+    padding-right: 25px;
+    padding-bottom: 30px;
+    font-size: 20px;
+    color: #0765c9;
+}
+
+.NewsCommentTitle span {
+    font-size: 35px;
+}
+
+.UserComment {
+    margin: 10px 20px;
+    padding: 25px 25px 25px 0px;
+    border-radius: 30px;
+    border: 1px solid #1a1a1a77;
+}
+
+.UserCommentReply {
+    background-color: rgba(0, 0, 0, 0.178);
+}
+
+.UserCommentDetails {
+    display: flex;
+    font-weight: wrap;
+}
+
+.UserCommentDetailsProfile img {
+    border-radius: 50px;
+    height: fit-content;
+}
+
+.UserCommentDetailsInfo {
+    padding: 10px 15px 10px 15px;
+}
+
+.UserCommentDetailsInfo h4 {
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+
+.UserCommentDetailsInfo h6 {
+    padding-bottom: 15px;
+    color: #1a1a1aab;
+}
+
+.UserCommentDetailsInfo p {
+    font-size: 15px;
+    text-align: justify;
+    color: #1a1a1a;
+}
+
+.UserCommentAcctions {
+    padding-right: 15%;
+}
+
+.CommentBtn {
+    color: white;
+}
+
+.CommentBtn span {
+    padding-left: 4px;
+}
+
+.ReplyCommentBtn {
+    margin-left: 15px;
+    padding: 4px 20px;
+    background-color: #0765c9;
+    border: none;
+    border-radius: 7px;
+}
+
+.ReplyCommentBtn:hover {
+    transition: .4s;
+    background-color: #1f7cdf;
+}
+
+.LikeCommentBtn {
+    background-color: #C61224;
+    border-radius: 25px;
+    padding: 4px 4px;
+    display: inline-block;
+    border: 1px solid #C61224;
+}
+
+.LikeCommentBtn:hover {
+    transition: .2s;
+    color: #C61224;
+    background-color: transparent;
 }
 
 
